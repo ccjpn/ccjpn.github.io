@@ -22,7 +22,7 @@
         document.getElementById("displayName").innerHTML = '<b>DisplayName:</b> ' + profile.displayName;
         document.getElementById("statusMessage").innerHTML = '<b>StatusMessage:</b> ' + profile.statusMessage;
         document.getElementById("getDecodedIDToken").innerHTML = '<b>Email:</b> ' + liff.getDecodedIDToken().email;
-        window.location.replace('‘https://docs.google.com/forms/d/e/1FAIpQLScM0B2RLvZ-CpOXQ6VzFQk2sxVT8y6x1iswrrv7dlAF5XnJrw/viewform?usp=pp_url&entry.931506820=%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%A2%E0%B8%AD%E0%B8%A1&entry.1632208568=' + profile.userId + '&entry.72485132=' + profile.displayName + '&entry.1490875810=1234567890');
+        window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLScM0B2RLvZ-CpOXQ6VzFQk2sxVT8y6x1iswrrv7dlAF5XnJrw/viewform?usp=pp_url&entry.931506820=%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%A2%E0%B8%AD%E0%B8%A1&entry.1632208568=' + profile.userId + '&entry.72485132=' + profile.displayName + '&entry.1490875810=1234567890');
       }).catch(err => console.error(err));
     }
     liff.init({ liffId: "2004309627-JwzZ3Q4W" }, () => {
