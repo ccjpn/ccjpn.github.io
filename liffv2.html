@@ -22,7 +22,7 @@
         document.getElementById("displayName").innerHTML = '<b>DisplayName:</b> ' + profile.displayName;
         document.getElementById("statusMessage").innerHTML = '<b>StatusMessage:</b> ' + profile.statusMessage;
         document.getElementById("getDecodedIDToken").innerHTML = '<b>Email:</b> ' + liff.getDecodedIDToken().email;
-        window.location.replace("https://docs.google.com/forms/d/e/1FAIpQLSdK2M3h6N0TDFZodMTgZ9wqPGJQS9ZEvxYfjYPZk0esdFXoOw/viewform?usp=pp_url&entry.931506820=%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%A2%E0%B8%AD%E0%B8%A1&entry.1550028450=" + profile.userId + "&entry.72485132=" + profile.displayName + "&entry.514686288=0123456789&entry.1544433102=" + liff.getDecodedIDToken().email);
+        window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSdK2M3h6N0TDFZodMTgZ9wqPGJQS9ZEvxYfjYPZk0esdFXoOw/viewform?usp=pp_url&entry.931506820=%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%A2%E0%B8%AD%E0%B8%A1&entry.1550028450=' + profile.userId + '&entry.72485132=' + profile.displayName + '&entry.514686288=0123456789&entry.1544433102=' + liff.getDecodedIDToken().email);
       }).catch(err => console.error(err));
     }
     liff.init({ liffId: "2004309627-JwzZ3Q4W" }, () => {
