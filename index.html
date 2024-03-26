@@ -8,16 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>ITDEV.win</title>
+    <title>Save early</title>
   </head>
   <body>
     <center>
     <h1>ลงทะเบียนแจ้งเตือน</h1>
-<p>ใส่รหัสนักเรียน/นักศึกษา </p>
-<p>เพื่อรับแจ้งเตือนการเข้าเรียนทางไลน์</p>
+<p>ใส่เลขบัตรประชาชน </p>
+<p>เพื่อรับแจ้งเตือน</p>
   <div class="form-group mx-sm-3 mb-2">
     <label for="inputPassword2" class="sr-only">ใส่รหัสนักเรียน</label>
-    <input type="text" class="form-control" id="stdid" placeholder="ใส่รหัสนักเรียน">
+    <input type="text" class="form-control" id="stdid" placeholder="ใส่เลขบัตรประชาชน">
   </div></br></br>
   <div id="cin" class="visible"><button type="button" class="btn btn-success" onclick="letg()">เชื่อมต่อกับไลน์</button>
 <p id="tex1"></p>
@@ -27,7 +27,7 @@
 
 <script>
 window.onload = function() {
-  initializeLiff('1655620417-5dWDpmLl');
+  initializeLiff('2004309627-JwzZ3Q4W');
 }
 
 function initializeLiff(myLiffId) {
@@ -51,7 +51,7 @@ var x2 = document.getElementById("stdid").value;
   x.innerHTML = "<br>StdId: " + x2+ 
   "<br>userId: " + uid+ 
   "<br>displayName: " + uname;
-window.location.replace('https://notify-bot.line.me/oauth/authorize?response_type=code&client_id=vF9AoTvZ7nBfkMV8EoW6t8&redirect_uri=https://itchampclub.github.io/check.std/link.html&scope=notify&state='+x2+'&stdid='+x2);
+window.location.replace('https://notify-bot.line.me/oauth/authorize?response_type=code&client_id=vF9AoTvZ7nBfkMV8EoW6t8&redirect_uri=https://ccjpn.github.io/check.std/link.html&scope=notify&state='+x2+'&stdid='+x2);
       });  
 }
 
